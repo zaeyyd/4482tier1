@@ -1,7 +1,7 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
-    - GameEnding
+    - GameEvents
     - LightFlicker
     - Observer
     - PlayerMovement
@@ -82,6 +82,8 @@ ScriptsOnlyBuild:
     - Class: 82
       Script: {instanceID: 0}
     - Class: 83
+      Script: {instanceID: 0}
+    - Class: 89
       Script: {instanceID: 0}
     - Class: 90
       Script: {instanceID: 0}
@@ -300,7 +302,7 @@ ScriptsOnlyBuild:
     className: PostProcessLayer
   - hash:
       serializedVersion: 2
-      Hash: 62cef9f13a042d4008a8138dfdef088a
+      Hash: ac3433200f155465e0f01cb5ab9d2392
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerMovement
@@ -1362,13 +1364,13 @@ ScriptsOnlyBuild:
     className: UnityOnSliderValueChangedMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 7b3599bbbae783f4ca02a593b1e6b645
+      Hash: 96596ef4415eabe5da5e282a528cf8a3
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: GameEnding
+    className: GameEvents
   - hash:
       serializedVersion: 2
-      Hash: 0f1977a7d51a5c5dee54d0932eea0adb
+      Hash: 8e74f4efa1ab5ca1f27c88b4b4903cfa
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Observer
@@ -1378,7 +1380,25 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: WaypointPatrol
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GameManager
+  - hash:
+      serializedVersion: 2
+      Hash: 7269c6cd47c4eae4832b7de0b69ecb1b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GameController
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: john
   platform: 2
   scenePathNames:
   - Assets/Scenes/MainScene.unity
-  playerPath: /Users/zayyedmansoor/Desktop/unity games/4482tier1/Builds/firstBuild.app
+  playerPath: /Users/zayyedmansoor/Desktop/unity games/4482tier1/Builds/JohnLemonButLikePacMan.app
