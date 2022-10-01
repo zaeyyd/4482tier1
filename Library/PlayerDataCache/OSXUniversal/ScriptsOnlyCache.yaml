@@ -1,10 +1,13 @@
 ScriptsOnlyBuild:
   usedScripts:
+    Assembly-CSharp-Editor.dll:
+    - ReadmeEditor
     Assembly-CSharp.dll:
     - GameEvents
     - LightFlicker
     - Observer
     - PlayerMovement
+    - Readme
     - WaypointPatrol
     Cinemachine.dll:
     - Cinemachine.CinemachineBrain
