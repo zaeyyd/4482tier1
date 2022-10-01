@@ -5,7 +5,9 @@ using UnityEngine;
 public class Observer : MonoBehaviour
 {
     public Transform player;
-    public GameEnding gameEnding;
+    public GameEvents gameEvents;
+    public bool powerUp;
+    static bool playerPoweredUp;
 
     bool m_IsPlayerInRange;
 
@@ -27,6 +29,11 @@ public class Observer : MonoBehaviour
         }
     }
 
+    public void PowerUpDone()
+    {
+        playerPoweredUp = false;
+    }
+
     void Update()
     {
         if (m_IsPlayerInRange)
@@ -39,7 +46,25 @@ public class Observer : MonoBehaviour
             {
                 if (raycastHit.collider.transform == player)
                 {
-                    gameEnding.CaughtPlayer();
+                    if (powerUp)
+                    {
+                        gameEvents.PlayerGotPowerUp();
+                        playerPoweredUp = true;
+
+                    }
+                    else
+                    {
+                        if (playerPoweredUp)
+                        {
+                            this.transform.parent.gameObject.SetActive(false);
+                        }
+                        else
+                        {
+                            gameEvents.CaughtPlayer();
+                        }
+
+                    }
+
                 }
             }
         }
